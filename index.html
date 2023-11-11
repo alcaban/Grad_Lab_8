@@ -216,6 +216,25 @@ this.stream.point(point.x, point.y);
                         </code>
                             </div>
                                 <br>
+
+                <p>PLACEHOLDER</p>
+
+                  <div style='height:200px; overflow:auto;background-color: black;'>
+                    <code>
+                        <pre>
+var toLine = d3.svg.line()
+            .interpolate("linear")
+            .x(function(d) {
+                return applyLatLngToLayer(d).x
+            })
+            .y(function(d) {
+                return applyLatLngToLayer(d).y
+            });
+                    </pre>
+                        </code>
+                            </div>             
+                                <br>
+                    
                   <p>We’ll add code that will draw the points in the GeoJSON file to the map. However, the opacity will be pre-set to 0. This is the secret to creating the line animation without showing the other points you made.</p>
                   
                   <div style='height:100px; overflow:auto;background-color: black;'>
